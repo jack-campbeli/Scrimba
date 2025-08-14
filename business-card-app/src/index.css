@@ -1,0 +1,166 @@
+/* Global sizing and visual properties for the application canvas */
+html,
+body {
+  background: #23252c;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+
+.card {
+  width: 317px;
+  height: 780px;
+  align-items: center;
+  position: absolute;
+  top: 44px;
+  left: 116px;
+  transform: rotate(0deg);
+  opacity: 1;
+  background: #1a1b21;
+  border-radius: 10px;
+  overflow: hidden;
+
+  /* Stack elements vertically */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Profile image styling */
+.card__profile-image {
+  width: 317px; /* Match card width */
+  height: 317px; /* Make it square */
+  object-fit: cover; /* Crop to fit square dimensions */
+  object-position: center; /* Center the crop */
+  border-radius: 0; /* card handles rounding via overflow */
+}
+
+.description {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 10.24px;
+
+  width: 317px;
+  color: #ffffff;
+  background: #1a1b21;
+  padding: 20px;
+  box-sizing: border-box;
+
+  /* Center content within description */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Control spacing between h2 and p elements */
+.description h2 {
+  margin: 0 0 5px 0; /* Top: 0, Right: 0, Bottom: 5px, Left: 0 */
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.description p {
+  margin: 0 0 20px 0; /* Top: 0, Right: 0, Bottom: 20px, Left: 0 */
+  font-size: 10.24px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #dcdcdc;
+}
+
+.intro {
+  width: 317px;
+  color: #ffffff;
+  background: #1a1b21;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 10.24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.intro h1 {
+  font-size: 25px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 25px;
+}
+
+.intro h2 {
+  font-size: 12.8px;
+  font-style: normal;
+  font-weight: normal;
+  color: #f3bf99;
+}
+
+.intro h3 {
+  font-size: 10.24px;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+/* Button group styling for business card */
+.button-group {
+  width: 317px;
+  background: #1a1b21;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.button-group .btn {
+  width: 115px;
+  min-height: 34px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  overflow: visible;
+  line-height: 1;
+}
+
+.button-group .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-group .btn-light {
+  background: #ffffff;
+  color: #374151;
+}
+
+.button-group .btn-primary {
+  background: #5093e2;
+  border-color: #5093e2;
+  color: #ffffff;
+}
+
+.button-group .btn-primary:hover {
+  background: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.footer {
+  width: 317px;
+  height: 64px;
+  background: #161619;
+  box-sizing: border-box;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: auto;
+}
